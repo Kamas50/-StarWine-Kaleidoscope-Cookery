@@ -32,24 +32,23 @@ public class TeacupRegistry {
         TeacupRegistry registry = new TeacupRegistry();
 
         BARLEY_TEA = registry.registerTeacupData("barley_tea", TeacupData.create(4).addEffect(() ->
-                new MobEffectInstance(ModEffects.VITALITY.get(), 8 * 60 * 20))
+                new MobEffectInstance(MobEffects.REGENERATION, 20 * 20))
         );
 
         TIEGUANYIN = registry.registerTeacupData("tieguanyin", TeacupData.create(4).addEffect(() ->
-                new MobEffectInstance(ModEffects.INSTANT_SMELTING.get(), 2 * 60 * 20))
+                new MobEffectInstance(MobEffects.REGENERATION, 20 * 20))
         );
 
         BILUOCHUN = registry.registerTeacupData("biluochun", TeacupData.create(4).addEffect(() ->
-                new MobEffectInstance(ModEffects.PROJECTILE_DODGE.get(), 2 * 60 * 20))
+                new MobEffectInstance(MobEffects.REGENERATION, 20 * 20))
         );
 
-        OOLONG = registry.registerTeacupData("oolong", TeacupData.create(4)
-                .addEffect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 6 * 60 * 20))
-                .addEffect(() -> new MobEffectInstance(MobEffects.JUMP, 6 * 60 * 20))
+        OOLONG = registry.registerTeacupData("oolong", TeacupData.create(4).addEffect(() ->
+                new MobEffectInstance(MobEffects.REGENERATION, 20 * 20))
         );
 
         SAKURA_FUBUKI = registry.registerTeacupData("sakura_fubuki", TeacupData.create(4).addEffect(() ->
-                new MobEffectInstance(ModEffects.HINDER.get(), 6 * 60 * 20))
+                new MobEffectInstance(MobEffects.REGENERATION, 20 * 20))
         );
 
         FLOWER_TEA = registry.registerTeacupData("flower_tea", TeacupData.create(4).addEffect(() ->
